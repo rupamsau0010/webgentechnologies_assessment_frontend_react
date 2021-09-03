@@ -21,3 +21,6 @@ Features:
 4. See all Products
 5. Search a particular product by name
 6. Post a new product(protected, only for registrated users)
+
+Improvements:
+1. Loading Spinner
