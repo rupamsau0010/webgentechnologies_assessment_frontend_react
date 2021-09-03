@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/css/main.5d3915bf.chunk.css",
+    "main.js": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/js/main.55fd6bb5.chunk.js",
+    "main.js.map": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/js/main.55fd6bb5.chunk.js.map",
+    "runtime-main.js": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/js/runtime-main.3ebe25ba.js",
+    "runtime-main.js.map": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/js/runtime-main.3ebe25ba.js.map",
+    "static/css/2.818011ed.chunk.css": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/css/2.818011ed.chunk.css",
+    "static/js/2.e8dc4e32.chunk.js": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/js/2.e8dc4e32.chunk.js",
+    "static/js/2.e8dc4e32.chunk.js.map": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/js/2.e8dc4e32.chunk.js.map",
+    "index.html": "/rupamsau0010/webgentechnologies_assessment_frontend_react/index.html",
+    "static/css/2.818011ed.chunk.css.map": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.5d3915bf.chunk.css.map": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/css/main.5d3915bf.chunk.css.map",
+    "static/js/2.e8dc4e32.chunk.js.LICENSE.txt": "/rupamsau0010/webgentechnologies_assessment_frontend_react/static/js/2.e8dc4e32.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3ebe25ba.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.e8dc4e32.chunk.js",
+    "static/css/main.5d3915bf.chunk.css",
+    "static/js/main.55fd6bb5.chunk.js"
+  ]
+}
