@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 export default class Login extends Component {
   state = {
@@ -27,7 +28,7 @@ export default class Login extends Component {
     };
 
     axios({
-      url: "https://webgen-assessment-backend.herokuapp.com/authentication/login",
+      url: "/authentication/login",
       method: "POST",
       data: payload,
     })
@@ -36,6 +37,7 @@ export default class Login extends Component {
         console.log(res);
         if (res.data.status === "success") {
           alert("Login Successful");
+          Cookies.set('jwt', res.data.jwt, { expires: 3 })
           this.props.history.push("/");
         } else {
           if (res.data.errors.email.length) {

@@ -18,6 +18,7 @@ export default function Home() {
   const loadingFunc = () => {
     console.log("calle");
     setCookie(undefined);
+    Cookies.remove('jwt')
     console.log("cleared", cookie);
   };
 
