@@ -32,16 +32,30 @@ export default class Login extends Component {
       method: "POST",
       data: payload,
     })
-      .then((res) => {
+      .then(async (res) => {
         console.log("Success");
         console.log(res);
         if (res.data.status === "success") {
           alert("Login Successful");
-          Cookies.set('jwt', res.data.jwt, { expires: 3 })
+
+          // const salt = await bcrypt.genSalt(10);
+          // const userId= await bcrypt.hash(res.data.userId, salt);
+
+          // Encrypt
+          // var ciphertext = CryptoJS.AES.encrypt(res.data.userId, 'secret key 123').toString();
+
+          // Decrypt
+          // var bytes = CryptoJS.AES.decrypt(ciphertext, 'secret key 123');
+          // var decryptedData = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+
+          localStorage.setItem("userId", res.data.userId);
+
+          Cookies.set("jwt", res.data.jwt, { expires: 3 });
           this.props.history.push("/");
         } else {
           if (res.data.errors.email.length) {
             alert(res.data.errors.email);
+            this.props.history.push("/register");
           } else if (res.data.errors.password.length) {
             alert(res.data.errors.password);
           }

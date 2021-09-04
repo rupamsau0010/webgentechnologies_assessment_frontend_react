@@ -1,15 +1,37 @@
 import React from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import Cookies from "js-cookie";
 
 function CreateProduct() {
-  const [pname, setPName] = React.useState("");
-  const [cname, setCName] = React.useState("");
-  const [productTitle, setproductTitle] = React.useState("");
-  const [price, setPrice] = React.useState("");
-  const [url, setUrl] = React.useState("");
+  // state:
+  const id = window.location.hash.split("/")[2];
+
+  const state = useSelector((state) => state);
+  const data = state.find((product) => product._id == id);
+  console.log("dass", data);
+
+  console.log(window.location);
+  var hash = window.location.hash;
+
+  // current states
+  const [pname, setPName] = React.useState(
+    hash == "#/create" ? "" : data.productName
+  );
+  const [cname, setCName] = React.useState(
+    hash == "#/create" ? "" : data.companyName
+  );
+  const [productTitle, setproductTitle] = React.useState(
+    hash == "#/create" ? "" : data.productTitle
+  );
+  const [price, setPrice] = React.useState(
+    hash == "#/create" ? "" : data.productPrice
+  );
+  const [url, setUrl] = React.useState(
+    hash == "#/create" ? "" : data.productImgUrl
+  );
+
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -42,19 +64,28 @@ function CreateProduct() {
   };
 
   const submit = () => {
-    const jwt = Cookies.get('jwt')
+    const jwt = Cookies.get("jwt");
+    const userId = localStorage.getItem("userId");
+
     const payload = {
       productName: pname,
       companyName: cname,
       productTitle: productTitle,
       productPrice: price,
       productImgUrl: url,
-      jwt: jwt
+      jwt: jwt,
+      productCreatedBy: userId,
+      productId: data == undefined ? "" : data._id,
     };
+
     console.log(payload);
+    const URL =
+      hash == "#/create"
+        ? "https://webgen-assessment-backend.herokuapp.com/products/enterproduct"
+        : "https://webgen-assessment-backend.herokuapp.com/products/updateproduct";
 
     axios({
-      url: "https://webgen-assessment-backend.herokuapp.com/products/enterproduct",
+      url: URL,
       method: "POST",
       data: payload,
     })
@@ -67,7 +98,10 @@ function CreateProduct() {
         } else if (res.data.status === "invalid") {
           console.log(res);
           alert(res.data.payload);
-          history.push("/register");
+          history.push("/");
+        } else if (res.data.status === "failure") {
+          alert(res.data.payload);
+          history.push("/");
         }
       })
       .catch((err) => {

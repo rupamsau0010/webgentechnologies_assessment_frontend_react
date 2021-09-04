@@ -17,6 +17,7 @@ export default function App() {
         <Route exact path="/register" component={Register} />
         <Route exact path="/create" component={CreateProduct} />
         <Route exact path="/product/:id" component={Product} />
+        <Route exact path="/update/:id" component={CreateProduct} />
       </Switch>
     </Router>
   );

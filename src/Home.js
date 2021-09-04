@@ -18,7 +18,8 @@ export default function Home() {
   const loadingFunc = () => {
     console.log("calle");
     setCookie(undefined);
-    Cookies.remove('jwt')
+    Cookies.remove("jwt");
+    localStorage.setItem("userId", "");
     console.log("cleared", cookie);
   };
 
@@ -26,7 +27,10 @@ export default function Home() {
     const load = async () => {
       setLoading(true);
 
-      axios({ url: "https://webgen-assessment-backend.herokuapp.com/products/getallproducts", method: "GET" })
+      axios({
+        url: "https://webgen-assessment-backend.herokuapp.com/products/getallproducts",
+        method: "GET",
+      })
         .then((response) => {
           const data = response.data;
           setPosts(data.payload);

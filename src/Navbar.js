@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import Cookies from "js-cookie";
 import { useHistory } from "react-router-dom";
 
 function Navbar(props) {
