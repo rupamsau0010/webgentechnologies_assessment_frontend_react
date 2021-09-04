@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+import Cookies from "js-cookie";
 
 function CreateProduct() {
   const [pname, setPName] = React.useState("");
@@ -41,12 +42,14 @@ function CreateProduct() {
   };
 
   const submit = () => {
+    const jwt = Cookies.get('jwt')
     const payload = {
       productName: pname,
       companyName: cname,
       productTitle: productTitle,
       productPrice: price,
       productImgUrl: url,
+      jwt: jwt
     };
     console.log(payload);
 
