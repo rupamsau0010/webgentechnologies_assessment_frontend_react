@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/webgentechnologies_assessment_frontend_react/static/css/main.5d3915bf.chunk.css",
-    "main.js": "/webgentechnologies_assessment_frontend_react/static/js/main.64cbc7ce.chunk.js",
-    "main.js.map": "/webgentechnologies_assessment_frontend_react/static/js/main.64cbc7ce.chunk.js.map",
+    "main.js": "/webgentechnologies_assessment_frontend_react/static/js/main.841d5610.chunk.js",
+    "main.js.map": "/webgentechnologies_assessment_frontend_react/static/js/main.841d5610.chunk.js.map",
     "runtime-main.js": "/webgentechnologies_assessment_frontend_react/static/js/runtime-main.256bfce2.js",
     "runtime-main.js.map": "/webgentechnologies_assessment_frontend_react/static/js/runtime-main.256bfce2.js.map",
     "static/css/2.818011ed.chunk.css": "/webgentechnologies_assessment_frontend_react/static/css/2.818011ed.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.818011ed.chunk.css",
     "static/js/2.e8dc4e32.chunk.js",
     "static/css/main.5d3915bf.chunk.css",
-    "static/js/main.64cbc7ce.chunk.js"
+    "static/js/main.841d5610.chunk.js"
   ]
 }
