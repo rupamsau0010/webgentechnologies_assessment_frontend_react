@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/webgentechnologies_assessment_frontend_react/static/css/main.5d3915bf.chunk.css",
-    "main.js": "/webgentechnologies_assessment_frontend_react/static/js/main.74c5d3ca.chunk.js",
-    "main.js.map": "/webgentechnologies_assessment_frontend_react/static/js/main.74c5d3ca.chunk.js.map",
+    "main.css": "/webgentechnologies_assessment_frontend_react/static/css/main.c923caa7.chunk.css",
+    "main.js": "/webgentechnologies_assessment_frontend_react/static/js/main.d9d3924f.chunk.js",
+    "main.js.map": "/webgentechnologies_assessment_frontend_react/static/js/main.d9d3924f.chunk.js.map",
     "runtime-main.js": "/webgentechnologies_assessment_frontend_react/static/js/runtime-main.256bfce2.js",
     "runtime-main.js.map": "/webgentechnologies_assessment_frontend_react/static/js/runtime-main.256bfce2.js.map",
     "static/css/2.818011ed.chunk.css": "/webgentechnologies_assessment_frontend_react/static/css/2.818011ed.chunk.css",
-    "static/js/2.b83855da.chunk.js": "/webgentechnologies_assessment_frontend_react/static/js/2.b83855da.chunk.js",
-    "static/js/2.b83855da.chunk.js.map": "/webgentechnologies_assessment_frontend_react/static/js/2.b83855da.chunk.js.map",
+    "static/js/2.eec2caed.chunk.js": "/webgentechnologies_assessment_frontend_react/static/js/2.eec2caed.chunk.js",
+    "static/js/2.eec2caed.chunk.js.map": "/webgentechnologies_assessment_frontend_react/static/js/2.eec2caed.chunk.js.map",
     "index.html": "/webgentechnologies_assessment_frontend_react/index.html",
     "static/css/2.818011ed.chunk.css.map": "/webgentechnologies_assessment_frontend_react/static/css/2.818011ed.chunk.css.map",
-    "static/css/main.5d3915bf.chunk.css.map": "/webgentechnologies_assessment_frontend_react/static/css/main.5d3915bf.chunk.css.map",
-    "static/js/2.b83855da.chunk.js.LICENSE.txt": "/webgentechnologies_assessment_frontend_react/static/js/2.b83855da.chunk.js.LICENSE.txt"
+    "static/css/main.c923caa7.chunk.css.map": "/webgentechnologies_assessment_frontend_react/static/css/main.c923caa7.chunk.css.map",
+    "static/js/2.eec2caed.chunk.js.LICENSE.txt": "/webgentechnologies_assessment_frontend_react/static/js/2.eec2caed.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.256bfce2.js",
     "static/css/2.818011ed.chunk.css",
-    "static/js/2.b83855da.chunk.js",
-    "static/css/main.5d3915bf.chunk.css",
-    "static/js/main.74c5d3ca.chunk.js"
+    "static/js/2.eec2caed.chunk.js",
+    "static/css/main.c923caa7.chunk.css",
+    "static/js/main.d9d3924f.chunk.js"
   ]
 }
