@@ -51,7 +51,7 @@ function CreateProduct() {
     console.log(payload);
 
     axios({
-      url: "/products/enterproduct",
+      url: "https://webgen-assessment-backend.herokuapp.com/products/enterproduct",
       method: "POST",
       data: payload,
     })

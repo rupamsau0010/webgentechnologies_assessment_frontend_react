@@ -16,7 +16,7 @@ function Navbar(props) {
     console.log(search);
 
     axios({
-      url: "/products/searchproduct",
+      url: "https://webgen-assessment-backend.herokuapp.com/products/searchproduct",
       method: "POST",
       data: { searchGiven: search },
     }).then((res) => {
@@ -28,7 +28,7 @@ function Navbar(props) {
   const logout = () => {
     console.log("alert");
     axios({
-      url: "/authentication/logout",
+      url: "https://webgen-assessment-backend.herokuapp.com/authentication/logout",
       method: "POST",
     }).then((res) => {
       console.log(res);

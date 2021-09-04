@@ -27,7 +27,7 @@ export default class Register extends Component {
     };
 
     axios({
-      url: "/authentication/signup",
+      url: "https://webgen-assessment-backend.herokuapp.com/authentication/signup",
       method: "POST",
       data: payload,
     })

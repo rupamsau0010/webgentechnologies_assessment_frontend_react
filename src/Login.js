@@ -27,7 +27,7 @@ export default class Login extends Component {
     };
 
     axios({
-      url: "/authentication/login",
+      url: "https://webgen-assessment-backend.herokuapp.com/authentication/login",
       method: "POST",
       data: payload,
     })
