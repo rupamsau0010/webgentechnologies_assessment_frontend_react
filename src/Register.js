@@ -36,7 +36,7 @@ export default class Register extends Component {
         console.log("Success");
         console.log(res);
         if (res.data.status === "success") {
-          alert("Registration Successful" + res.data.jwt);
+          alert("Registration Successful");
           Cookies.set('jwt', res.data.jwt, { expires: 3 })
           this.props.history.push("/");
         } else {
